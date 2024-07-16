@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <style>
-        @media only screen and (hover:none) and (pointer: coarse) {
-            body {
-                overflow: hidden;
-                background-color: aliceblue; /* Replace with your desired background color */
-            }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        body {
+            padding: 10px;
+
+        }
+        .container-one {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .hobbies{
+            padding-left: 20px;
+        }
+        .skills{
+            padding-left: 20px;
+        }
+
+        
     </style>
     
     <title>Ladla personal Portfolio</title>
@@ -19,9 +38,10 @@
 <body>
     <main>
         <div style="background-color: aliceblue; margin: -9px; padding: 9px;">
+            <div class="container-one">
             <table cellspacing="10">
                 <tr>
-                    <td><img src="ladla.png" alt="ladla's profil picture" style="height: 400px; width: auto;"></td>
+                    <td><img src="ladla.png" alt="ladla's profil picture" style="height: 200px; width: auto;"></td>
                     <td>
                         <div style="width: auto;">
                         <h1>Ladla Hamza</h1>
@@ -32,7 +52,7 @@
                 </tr>
             </table>
             
-            
+        </div>
             <hr size="5" color="#94e6f2,pink,black">
             <h3>Studied</h3>
             <table border="2" style="margin-left: 150px; ">
@@ -62,14 +82,17 @@
             </table>
             <hr size="5" color="#94e6f2,pink,black">
             <h3>Hobbies</h3>
+            <div class="hobbies">
             <ol>
                 <li><p>I love playing and watching <em><strong>cricket and Football</strong></em>.</p></li>
                 <li><p>I love <strong><em>traveling and exploring new places</em></strong>.</p></li>
                 <li><p>I only love watching <em><strong>Dramas </strong></em>.</p></li>
             </ol>
+            </div>
             <hr size="5" color="#94e6f2,pink,black">
             
             <h3>Skills</h3>
+            <div class="skills">
             <ul>
                 <li><p>I am a student of <strong><em> Computer Science</em></strong>.</p></li>
                 <li><p>I am a Web Developer with experience in following..</p></li>
@@ -103,6 +126,7 @@
                 </tr>
         
             </table>
+            </div>
             <hr size="5" color="#94e6f2,pink,black">
             <h3>Own Websites</h3>
             <ul>
